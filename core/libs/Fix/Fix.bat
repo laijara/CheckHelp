@@ -20,6 +20,7 @@ if "%input%"=="0" goto exits
 if "%input%"=="1" call :absoluteStart "Запуск проверки системных файлов" "checkSystem.bat"
 if "%input%"=="2" call :absoluteStart "Запуск проверки диска" "checkDisk.bat"
 if "%input%"=="3" call :absoluteStart "Запуск проверки оперативной памяти" "checkMemory.bat"
+if "%input%"=="4" call :absoluteStart "Запуск проверки компонентов" "checkDism.bat"
 goto menu
 
 :: absoluteStart
