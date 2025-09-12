@@ -1,3 +1,3 @@
 @echo off
-start sfc /scannow
+sfc /scannow
 pause

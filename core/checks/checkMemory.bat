@@ -1,3 +1,3 @@
 @echo off
-start C:\Windows\System32\mdsched.exe
+C:\Windows\System32\mdsched.exe
 pause
