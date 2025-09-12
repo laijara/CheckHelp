@@ -4,38 +4,30 @@ echo "Почини компутер"
 
 :: Main
 cd /d "%~dp0"
-set "CHECK_PATH=%~dp0checks\"
+set "CHECK_PATH=%~dp0libs\"
 
 :: Menu
 :menu
 echo =======================
 echo 0. Выход
-echo 1. Информация о системе
-echo 2. Информация о соединениях
-echo 3. Проверка системных файлов
-echo 4. Проверка диска
-echo 5. Проверка оперативной памяти
+echo 1. Информационные параметры
+echo 2. Параметры для исправлений
 echo:
 
 :: Input
 set /p input= Выберите действие:
 if "%input%"=="0" goto exits
-if "%input%"=="1" call :absoluteStart "Просмотр информации о системе" "infoSystem.bat"
-if "%input%"=="2" call :absoluteStart "Просмотр информации о соединениях" "checkIp.bat"
-if "%input%"=="3" call :absoluteStart "Запуск проверки системных файлов" "checkSystem.bat"
-if "%input%"=="4" call :absoluteStart "Запуск проверки диска" "checkDisk.bat"
-if "%input%"=="5" call :absoluteStart "Запуск проверки оперативной памяти" "checkMemory.bat"
+if "%input%"=="1" call :absoluteStart "Список информационных параматеров" "info.bat" "Info"
+if "%input%"=="2" call :absoluteStart "Список параметров для исправлений" "fix.bat" "Fix"
 goto menu
-
-
 
 :: absoluteStart
 :absoluteStart
 echo: 
 echo %~1
-set "target_bat=%CHECK_PATH%%~2"
+set "target_bat=%CHECK_PATH%%~3\%~2"
 if exist "%target_bat%" (
-    powershell -Command "Start-Process -Verb RunAs -FilePath '%target_bat%' -Wait"
+    start %target_bat%
 ) else (
     echo Файл не найден: %target_bat%
 )
