@@ -29,7 +29,7 @@ echo:
 echo %~1
 set "target_bat=%CHECK_PATH%%~3\%~2"
 if exist "%target_bat%" (
-    start %target_bat%
+    %target_bat%
 ) else (
     echo Файл не найден: %target_bat%
 )

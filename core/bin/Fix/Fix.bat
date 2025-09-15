@@ -1,5 +1,4 @@
 @echo off
-chcp 65001
 
 :: Main
 cd /d "%~dp0"
@@ -41,5 +40,11 @@ goto menu
 
 :: Exit
 :exits
-chcp 866
-exit
+cd ..\..\
+set "default_bat=start.bat"
+if exist "%default_bat%" (
+    %default_bat%
+) else (
+    echo Файл не найден: %default_bat_bat%
+)
+goto menu
