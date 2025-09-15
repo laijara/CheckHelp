@@ -14,7 +14,7 @@ echo:
 :: Input
 set /p input= Выберите действие:
 if "%input%"=="0" goto exits
-if "%input%"=="1" call :absoluteStart "Просмотр информации о системе (systeminfo)" "CleanTemp.bat"
+if "%input%"=="1" call :absoluteStart "Очистка папки TEMP" "CleanTemp.bat"
 goto menu
 
 :: absoluteStart

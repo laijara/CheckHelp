@@ -20,7 +20,7 @@ set /p input= Выберите действие:
 if "%input%"=="0" goto exits
 if "%input%"=="1" call :absoluteStart "Список информационных параматеров" "Info.bat" "Info"
 if "%input%"=="2" call :absoluteStart "Список параметров для исправлений" "Fix.bat" "Fix"
-if "%input%"=="3" call :absoluteStart "Список параметров для исправлений" "Clean.bat" "Clean"
+if "%input%"=="3" call :absoluteStart "Очистка системы" "Clean.bat" "Clean"
 goto menu
 
 :: absoluteStart
