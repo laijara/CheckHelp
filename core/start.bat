@@ -4,7 +4,7 @@ echo "Почини компутер"
 
 :: Main
 cd /d "%~dp0"
-set "CHECK_PATH=%~dp0libs\"
+set "CHECK_PATH=%~dp0bin\"
 
 :: Menu
 :menu
@@ -12,13 +12,15 @@ echo =======================
 echo 0. Выход
 echo 1. Информационные параметры
 echo 2. Параметры для исправлений
+echo 3. Чистка компьютера
 echo:
 
 :: Input
 set /p input= Выберите действие:
 if "%input%"=="0" goto exits
-if "%input%"=="1" call :absoluteStart "Список информационных параматеров" "info.bat" "Info"
-if "%input%"=="2" call :absoluteStart "Список параметров для исправлений" "fix.bat" "Fix"
+if "%input%"=="1" call :absoluteStart "Список информационных параматеров" "Info.bat" "Info"
+if "%input%"=="2" call :absoluteStart "Список параметров для исправлений" "Fix.bat" "Fix"
+if "%input%"=="3" call :absoluteStart "Список параметров для исправлений" "Clean.bat" "Clean"
 goto menu
 
 :: absoluteStart
