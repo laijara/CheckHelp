@@ -13,6 +13,7 @@ echo 2. Информация о соединениях (ipconfig)
 echo 3. Информация о потреблении ресурсов (resmon)
 echo 4. Просмотр логов (eventvwr.msc)
 echo 5. Информация о запущенных задачах (tasklist)
+echo 6. Проверка работоспособности интернета
 echo:
 
 :: Input
@@ -23,6 +24,7 @@ if "%input%"=="2" call :absoluteStart "Просмотр информации о 
 if "%input%"=="3" call :absoluteStart "Просмотр информации о соединениях (resmon)" "InfoResources.bat"
 if "%input%"=="4" call :absoluteStart "Просмотр логов (eventvwr.msc)" "InfoResources.bat"
 if "%input%"=="5" call :absoluteStart "Просмотр запущенных задач (tasklist)" "InfoTaskList.bat"
+if "%input%"=="6" call :absoluteStart "Проверка работоспособности интернета" "InfoNet.bat"
 goto menu
 
 :: absoluteStart
