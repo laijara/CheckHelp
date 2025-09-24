@@ -1,0 +1,2 @@
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\bin\Release\net8.0\publish\win-x64\CheckHelp.pdb
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\bin\Release\net8.0\publish\win-x64\CheckHelp.exe

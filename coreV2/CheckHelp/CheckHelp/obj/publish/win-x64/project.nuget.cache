@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "YAqfFe01L3w=",
+  "success": true,
+  "projectFilePath": "D:\\gitupload\\CheckHelp\\corev2\\CheckHelp\\CheckHelp\\CheckHelp.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Руслан Польщиков\\.nuget\\packages\\microsoft.net.illink.tasks\\8.0.20\\microsoft.net.illink.tasks.8.0.20.nupkg.sha512"
+  ],
+  "logs": []
+}

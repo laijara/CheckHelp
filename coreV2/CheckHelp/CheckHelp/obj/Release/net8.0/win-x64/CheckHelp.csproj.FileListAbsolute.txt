@@ -1,0 +1,15 @@
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\bin\Release\net8.0\win-x64\CheckHelp.exe
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\bin\Release\net8.0\win-x64\CheckHelp.deps.json
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\bin\Release\net8.0\win-x64\CheckHelp.runtimeconfig.json
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\bin\Release\net8.0\win-x64\CheckHelp.dll
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\bin\Release\net8.0\win-x64\CheckHelp.pdb
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.GeneratedMSBuildEditorConfig.editorconfig
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.AssemblyInfoInputs.cache
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.AssemblyInfo.cs
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.csproj.CoreCompileInputs.cache
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.sourcelink.json
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.dll
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\refint\CheckHelp.dll
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.pdb
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\CheckHelp.genruntimeconfig.cache
+D:\gitupload\CheckHelp\corev2\CheckHelp\CheckHelp\obj\Release\net8.0\win-x64\ref\CheckHelp.dll
