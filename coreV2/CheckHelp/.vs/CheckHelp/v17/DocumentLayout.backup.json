@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "D:\\gitupload\\CheckHelp\\coreV2\\CheckHelp\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{3CD7E92D-BB6C-41CA-9413-83DA820D8FFF}|CheckHelp\\CheckHelp.csproj|d:\\gitupload\\checkhelp\\corev2\\checkhelp\\checkhelp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3CD7E92D-BB6C-41CA-9413-83DA820D8FFF}|CheckHelp\\CheckHelp.csproj|solutionrelative:checkhelp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{3CD7E92D-BB6C-41CA-9413-83DA820D8FFF}|CheckHelp\\CheckHelp.csproj|d:\\gitupload\\checkhelp\\corev2\\checkhelp\\checkhelp\\packages\\fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3CD7E92D-BB6C-41CA-9413-83DA820D8FFF}|CheckHelp\\CheckHelp.csproj|solutionrelative:checkhelp\\packages\\fix.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3CD7E92D-BB6C-41CA-9413-83DA820D8FFF}|CheckHelp\\CheckHelp.csproj|d:\\gitupload\\checkhelp\\corev2\\checkhelp\\checkhelp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3CD7E92D-BB6C-41CA-9413-83DA820D8FFF}|CheckHelp\\CheckHelp.csproj|solutionrelative:checkhelp\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{3CD7E92D-BB6C-41CA-9413-83DA820D8FFF}|CheckHelp\\CheckHelp.csproj|d:\\gitupload\\checkhelp\\corev2\\checkhelp\\checkhelp\\packages\\clean.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -26,7 +26,7 @@
       "DocumentGroups": [
         {
           "DockedHeight": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -50,13 +50,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Fix.cs",
               "DocumentMoniker": "D:\\gitupload\\CheckHelp\\coreV2\\CheckHelp\\CheckHelp\\packages\\Fix.cs",
               "RelativeDocumentMoniker": "CheckHelp\\packages\\Fix.cs",
               "ToolTip": "D:\\gitupload\\CheckHelp\\coreV2\\CheckHelp\\CheckHelp\\packages\\Fix.cs",
               "RelativeToolTip": "CheckHelp\\packages\\Fix.cs",
-              "ViewState": "AgIAAHYAAAAAAAAAAAAcwEEAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAqwEEAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-09-24T17:09:58.679Z",
               "EditorCaption": ""
@@ -75,16 +75,15 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Program.cs",
               "DocumentMoniker": "D:\\gitupload\\CheckHelp\\coreV2\\CheckHelp\\CheckHelp\\Program.cs",
               "RelativeDocumentMoniker": "CheckHelp\\Program.cs",
               "ToolTip": "D:\\gitupload\\CheckHelp\\coreV2\\CheckHelp\\CheckHelp\\Program.cs",
               "RelativeToolTip": "CheckHelp\\Program.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAADEAAABQAAAAAAAAAA==",
+              "ViewState": "AgIAABMAAAAAAAAAAAAgwDEAAABQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-09-24T16:07:37.805Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-09-24T16:07:37.805Z"
             }
           ]
         }
