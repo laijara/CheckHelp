@@ -4,24 +4,12 @@ namespace CheckHelp
 {
     internal class Program
     {
-        private static void Outputs()
-        {
-            Console.WriteLine("Почини компутер");
-            Console.WriteLine("============================");
-            Console.WriteLine("0. Выход");
-            Console.WriteLine("1. Информационные параметры");
-            Console.WriteLine("2. Параметры для исправлений");
-            Console.WriteLine("3. Чистка компьютера");
-            Console.WriteLine("");
-            Console.Write("Выберите операцию - ");
-        }
-
         public static void Main()
         {
             int a;
             while (true)
             {
-                Outputs();
+                OutputMain();
                 while (true)
                 {
                     var input = Console.ReadLine();
@@ -33,7 +21,7 @@ namespace CheckHelp
                     {
                         Console.Clear();
                         Console.WriteLine("Ошибка: ВВЕДИТЕ НОМЕР ОПЕРАЦИИ КОРРЕКТНО!");
-                        Outputs();
+                        OutputMain();
                     }
                 }
                 switch (a)
@@ -59,12 +47,22 @@ namespace CheckHelp
 
                     default:
                         Console.Clear();
-                        Console.WriteLine("");
-                        Console.WriteLine("Такой операции не существует!!!!");
-                        Console.WriteLine("");
+                        Console.WriteLine("Ошибка: ТАКОЙ ОПЕРАЦИИ НЕ СУЩЕСТВУЕТ!");
                         break;
                 }
             }
+        }
+
+        private static void OutputMain()
+        {
+            Console.WriteLine("Почини компутер");
+            Console.WriteLine("============================");
+            Console.WriteLine("0. Выход");
+            Console.WriteLine("1. Информационные параметры");
+            Console.WriteLine("2. Параметры для исправлений");
+            Console.WriteLine("3. Чистка компьютера");
+            Console.WriteLine("");
+            Console.Write("Выберите операцию - ");
         }
     }
 }

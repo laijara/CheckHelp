@@ -9,26 +9,12 @@ namespace CheckHelp.packages
 {
     internal class Fix
     {
-        private static void Outputs()
-        {
-            Console.WriteLine("Информационные параметры");
-            Console.WriteLine("============================");
-            Console.WriteLine("0. Выход");
-            Console.WriteLine("1. Проверка системных файлов (sfcscan)");
-            Console.WriteLine("2. Проверка диска (chkdsk)");
-            Console.WriteLine("3. Проверка оперативной памяти (mdsched.exe)");
-            Console.WriteLine("4. Проверка компонентов образов (dism)");
-            Console.WriteLine("5. Сброс сетевых настроек (TCP/IP)");
-            Console.WriteLine("");
-            Console.Write("Выберите операцию - ");
-        }
-
         public static void FixStart()
         {
             int a;
             while (true)
             {
-                Outputs();
+                OutputFix();
                 while (true)
                 {
                     var input = Console.ReadLine();
@@ -40,7 +26,7 @@ namespace CheckHelp.packages
                     {
                         Console.Clear();
                         Console.WriteLine("Ошибка: ВВЕДИТЕ НОМЕР ОПЕРАЦИИ КОРРЕКТНО!");
-                        Outputs();
+                        OutputFix();
                     }
                 }
                 switch (a)
@@ -77,12 +63,24 @@ namespace CheckHelp.packages
 
                     default:
                         Console.Clear();
-                        Console.WriteLine("");
-                        Console.WriteLine("Такой операции не существует!!!!");
-                        Console.WriteLine("");
+                        Console.WriteLine("Ошибка: ТАКОЙ ОПЕРАЦИИ НЕ СУЩЕСТВУЕТ!");
                         break;
                 }
             }
+        }
+
+        private static void OutputFix()
+        {
+            Console.WriteLine("Информационные параметры");
+            Console.WriteLine("============================");
+            Console.WriteLine("0. Выход");
+            Console.WriteLine("1. Проверка системных файлов (sfcscan)");
+            Console.WriteLine("2. Проверка диска (chkdsk)");
+            Console.WriteLine("3. Проверка оперативной памяти (mdsched.exe)");
+            Console.WriteLine("4. Проверка компонентов образов (dism)");
+            Console.WriteLine("5. Сброс сетевых настроек (TCP/IP)");
+            Console.WriteLine("");
+            Console.Write("Выберите операцию - ");
         }
 
         private static void FixSystem()

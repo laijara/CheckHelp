@@ -9,27 +9,12 @@ namespace CheckHelp.packages
 {
     internal class Info
     {
-        private static void Outputs()
-        {
-            Console.WriteLine("Информационные параметры");
-            Console.WriteLine("============================");
-            Console.WriteLine("0. Выход");
-            Console.WriteLine("1. Информация о системе (systeminfo)");
-            Console.WriteLine("2. Информация о соединениях (ipconfig)");
-            Console.WriteLine("3. Информация о потреблении ресурсов (resmon)");
-            Console.WriteLine("4. Просмотр логов (eventvwr.msc)");
-            Console.WriteLine("5. Информация о запущенных задачах (tasklist)");
-            Console.WriteLine("6. Проверка работоспособности интернета");
-            Console.WriteLine("");
-            Console.Write("Выберите операцию - ");
-        }
-
         public static void InfoStart()
         {
             int a;
             while (true)
             {
-                Outputs();
+                OutputInfo();
                 while (true)
                 {
                     var input = Console.ReadLine();
@@ -41,7 +26,7 @@ namespace CheckHelp.packages
                     {
                         Console.Clear();
                         Console.WriteLine("Ошибка: ВВЕДИТЕ НОМЕР ОПЕРАЦИИ КОРРЕКТНО!");
-                        Outputs();
+                        OutputInfo();
                     }
                 }
                 switch (a)
@@ -83,12 +68,25 @@ namespace CheckHelp.packages
 
                     default:
                         Console.Clear();
-                        Console.WriteLine("");
-                        Console.WriteLine("Такой операции не существует!!!!");
-                        Console.WriteLine("");
+                        Console.WriteLine("Ошибка: ТАКОЙ ОПЕРАЦИИ НЕ СУЩЕСТВУЕТ!");
                         break;
                 }
             }
+        }
+
+        private static void OutputInfo()
+        {
+            Console.WriteLine("Информационные параметры");
+            Console.WriteLine("============================");
+            Console.WriteLine("0. Выход");
+            Console.WriteLine("1. Информация о системе (systeminfo)");
+            Console.WriteLine("2. Информация о соединениях (ipconfig)");
+            Console.WriteLine("3. Информация о потреблении ресурсов (resmon)");
+            Console.WriteLine("4. Просмотр логов (eventvwr.msc)");
+            Console.WriteLine("5. Информация о запущенных задачах (tasklist)");
+            Console.WriteLine("6. Проверка работоспособности интернета");
+            Console.WriteLine("");
+            Console.Write("Выберите операцию - ");
         }
 
         private static void InfoSystem()

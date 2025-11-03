@@ -1,0 +1,61 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "D:\\gitupload\\CheckHelp\\coreV3\\CheckHelp\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{A602CDAB-4443-417F-88CA-87226525E76A}|CheckHelp\\CheckHelp.csproj|d:\\gitupload\\checkhelp\\corev3\\checkhelp\\checkhelp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}",
+      "RelativeMoniker": "D:0:0:{A602CDAB-4443-417F-88CA-87226525E76A}|CheckHelp\\CheckHelp.csproj|solutionrelative:checkhelp\\mainwindow.xaml||{F11ACC28-31D1-4C80-A34B-F4E09D3D753C}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A602CDAB-4443-417F-88CA-87226525E76A}|CheckHelp\\CheckHelp.csproj|d:\\gitupload\\checkhelp\\corev3\\checkhelp\\checkhelp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A602CDAB-4443-417F-88CA-87226525E76A}|CheckHelp\\CheckHelp.csproj|solutionrelative:checkhelp\\mainwindow.xaml.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 1,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedHeight": 200,
+          "SelectedChildIndex": 2,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "MainWindow.xaml",
+              "DocumentMoniker": "D:\\gitupload\\CheckHelp\\coreV3\\CheckHelp\\CheckHelp\\MainWindow.xaml",
+              "RelativeDocumentMoniker": "CheckHelp\\MainWindow.xaml",
+              "ToolTip": "D:\\gitupload\\CheckHelp\\coreV3\\CheckHelp\\CheckHelp\\MainWindow.xaml",
+              "RelativeToolTip": "CheckHelp\\MainWindow.xaml",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003549|",
+              "WhenOpened": "2025-10-02T19:43:48.621Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "MainWindow.xaml.cs",
+              "DocumentMoniker": "D:\\gitupload\\CheckHelp\\coreV3\\CheckHelp\\CheckHelp\\MainWindow.xaml.cs",
+              "RelativeDocumentMoniker": "CheckHelp\\MainWindow.xaml.cs",
+              "ToolTip": "D:\\gitupload\\CheckHelp\\coreV3\\CheckHelp\\CheckHelp\\MainWindow.xaml.cs",
+              "RelativeToolTip": "CheckHelp\\MainWindow.xaml.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-10-02T19:43:46.866Z",
+              "EditorCaption": ""
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

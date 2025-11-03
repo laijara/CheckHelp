@@ -9,22 +9,12 @@ namespace CheckHelp.packages
 {
     internal class Clean
     {
-        private static void Outputs()
-        {
-            Console.WriteLine("Информационные параметры");
-            Console.WriteLine("============================");
-            Console.WriteLine("0. Выход");
-            Console.WriteLine("1. Очистка папки TEMP");
-            Console.WriteLine("");
-            Console.Write("Выберите операцию - ");
-        }
-
         public static void CleanStart()
         {
             int a;
             while (true)
             {
-                Outputs();
+                OutputClean();
                 while (true)
                 {
                     var input = Console.ReadLine();
@@ -36,7 +26,7 @@ namespace CheckHelp.packages
                     {
                         Console.Clear();
                         Console.WriteLine("Ошибка: ВВЕДИТЕ НОМЕР ОПЕРАЦИИ КОРРЕКТНО!");
-                        Outputs();
+                        OutputClean();
                     }
                 }
                 switch (a)
@@ -53,12 +43,20 @@ namespace CheckHelp.packages
 
                     default:
                         Console.Clear();
-                        Console.WriteLine("");
-                        Console.WriteLine("Такой операции не существует!!!!");
-                        Console.WriteLine("");
+                        Console.WriteLine("Ошибка: ТАКОЙ ОПЕРАЦИИ НЕ СУЩЕСТВУЕТ!");
                         break;
                 }
             }
+        }
+
+        private static void OutputClean()
+        {
+            Console.WriteLine("Информационные параметры");
+            Console.WriteLine("============================");
+            Console.WriteLine("0. Выход");
+            Console.WriteLine("1. Очистка папки TEMP");
+            Console.WriteLine("");
+            Console.Write("Выберите операцию - ");
         }
 
         private static void CleanTemp()
