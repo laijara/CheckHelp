@@ -7,15 +7,13 @@ void NotWorkingMenuFunctions::StartNotWorkingMenu() {
     {
         NotWorkingMenuFunctions::DescriptionNotWorkingMenuCategories();
         inp = SharedFunctions::SecureInput();
-        switch (inp)
-        {
-        case 0:
+        if (inp == 0) {
             SharedFunctions::CleaningMenu();
             return;
-        default:
+		}
+        else {
             SharedFunctions::ErrorMessage(0);
-            break;
-        }
+		}
     }
 }
 
