@@ -56,7 +56,6 @@ void SharedFunctions::CleaningAndPauseMenu(short typeCleaning, void(*callback)()
         callback();
     }
     else if (typeCleaning == 2) {
-        SharedFunctions::PauseMenu();
         SharedFunctions::CleaningMenu();
         callback();
         SharedFunctions::PauseMenu();
