@@ -129,11 +129,15 @@
     <ClCompile Include="packageForMain\categories\CleaningFunctions.cpp" />
     <ClCompile Include="packageForMain\categories\FixFunctions.cpp" />
     <ClCompile Include="packageForMain\categories\InfoFunctions.cpp" />
+    <ClCompile Include="packageForMain\sys\NotWorkingMenuFunctions.cpp" />
     <ClCompile Include="packageForMain\sys\SharedFunctions.cpp" />
     <ClCompile Include="ComputerHelper.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="packageForMain\Classes.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Futures.txt" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

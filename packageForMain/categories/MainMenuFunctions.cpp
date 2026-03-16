@@ -13,17 +13,16 @@ void MainMenuFunctions::StartProgram() {
             SharedFunctions::PauseMenu();
             return;
         case 1:
-            SharedFunctions::SwapAndClearMenuNoPause(InfoFunctions::StartInfo);
+            SharedFunctions::CleaningAndPauseMenu(0, InfoFunctions::StartInfo);
             break;
         case 2:
-            SharedFunctions::SwapAndClearMenuNoPause(FixFunctions::StartFix);
+            SharedFunctions::CleaningAndPauseMenu(0, FixFunctions::StartFix);
             break;
         case 3:
-            SharedFunctions::SwapAndClearMenuNoPause(CleaningFunctions::StartCleaning);
+            SharedFunctions::CleaningAndPauseMenu(0, NotWorkingMenuFunctions::StartNotWorkingMenu);
             break;
         default:
-            SharedFunctions::ClearMenu();
-            std::cout << "Такого действия не существует!" << std::endl << std::endl;
+			SharedFunctions::ErrorMessage(0);
             break;
         }
     }

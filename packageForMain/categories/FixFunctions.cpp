@@ -10,26 +10,25 @@ void FixFunctions::StartFix() {
         switch (inp)
         {
         case 0:
-            SharedFunctions::ClearMenu();
+            SharedFunctions::CleaningMenu();
             return;
         case 1:
-            SharedFunctions::SwapAndClearMenuAndClear(FixFunctions::FixSystem);
+            SharedFunctions::CleaningAndPauseMenu(2, FixFunctions::FixSystem);
             break;
         case 2:
-            SharedFunctions::SwapAndClearMenuAndClear(FixFunctions::FixDisk);
+            SharedFunctions::CleaningAndPauseMenu(2, FixFunctions::FixDisk);
             break;
         case 3:
-            SharedFunctions::SwapAndClearMenuAndClear(FixFunctions::FixOperationalMemory);
+            SharedFunctions::CleaningAndPauseMenu(2, FixFunctions::FixOperationalMemory);
             break;
         case 4:
-            SharedFunctions::SwapAndClearMenuAndClear(FixFunctions::FixDism);
+            SharedFunctions::CleaningAndPauseMenu(2, FixFunctions::FixDism);
             break;
         case 5:
-            SharedFunctions::SwapAndClearMenuAndClear(FixFunctions::FixNetSettingsReset);
+            SharedFunctions::CleaningAndPauseMenu(2, FixFunctions::FixNetSettingsReset);
             break;
         default:
-            SharedFunctions::ClearMenu();
-            std::cout << "Такого действия не существует!" << std::endl << std::endl;
+			SharedFunctions::ErrorMessage(0);
             break;
         }
     }

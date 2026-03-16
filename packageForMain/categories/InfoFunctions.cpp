@@ -10,29 +10,28 @@ void InfoFunctions::StartInfo() {
         switch (inp)
         {
         case 0:
-            SharedFunctions::ClearMenu();
+            SharedFunctions::CleaningMenu();
             return;
         case 1:
-            SharedFunctions::SwapAndClearMenuAndClear(InfoFunctions::InfoSystem);
+            SharedFunctions::CleaningAndPauseMenu(2, InfoFunctions::InfoSystem);
             break;
         case 2:
-            SharedFunctions::SwapAndClearMenuAndClear(InfoFunctions::InfoIp);
+            SharedFunctions::CleaningAndPauseMenu(2, InfoFunctions::InfoIp);
             break;
         case 3:
-            SharedFunctions::SwapAndClearMenuAndClear(InfoFunctions::InfoResources);
+            SharedFunctions::CleaningAndPauseMenu(2, InfoFunctions::InfoResources);
             break;
         case 4:
-            SharedFunctions::SwapAndClearMenuAndClear(InfoFunctions::InfoLogs);
+            SharedFunctions::CleaningAndPauseMenu(2, InfoFunctions::InfoLogs);
             break;
         case 5:
-            SharedFunctions::SwapAndClearMenuAndClear(InfoFunctions::InfoTaskList);
+            SharedFunctions::CleaningAndPauseMenu(2, InfoFunctions::InfoTaskList);
             break;
         case 6:
-            SharedFunctions::SwapAndClearMenuAndClear(InfoFunctions::InfoNet);
+            SharedFunctions::CleaningAndPauseMenu(2, InfoFunctions::InfoNet);
             break;
         default:
-            SharedFunctions::ClearMenu();
-            std::cout << "Такого действия не существует!" << std::endl << std::endl;
+            SharedFunctions::ErrorMessage(0);
             break;
         }
     }

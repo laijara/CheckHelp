@@ -5,10 +5,11 @@ class SharedFunctions {
 public:
     static short SecureInput();
     static void PauseMenu();
-    static void ClearMenu();
-    static void SwapAndClearMenu(void (*callback)());
-    static void SwapAndClearMenuAndClear(void (*callback)());
-    static void SwapAndClearMenuNoPause(void (*callback)());
+    static void CleaningMenu();
+	static void CleaningAndPauseMenu(short typeCleaning,void (*callback)());
+    static void ErrorMessage(short errorLevel);
+private:
+    static int errorCount;
 };
 
 class MainMenuFunctions {
@@ -16,6 +17,13 @@ public:
     static void StartProgram();
 private:
     static void DescriptionCategories();
+};
+
+class NotWorkingMenuFunctions {
+public:
+    static void StartNotWorkingMenu();
+private:
+    static void DescriptionNotWorkingMenuCategories();
 };
 
 class InfoFunctions {

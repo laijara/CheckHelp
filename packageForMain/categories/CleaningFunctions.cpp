@@ -10,38 +10,37 @@ void CleaningFunctions::StartCleaning() {
         switch (inp)
         {
         case 0:
-            SharedFunctions::ClearMenu();
+            SharedFunctions::CleaningMenu();
             return;
         case 1:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningAll);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningAll);
             break;
         case 2:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningTemp);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningTemp);
             break;
         case 3:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningUserTemp);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningUserTemp);
             break;
         case 4:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningPrefetch);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningPrefetch);
             break;
         case 5:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningSoftwareDistribution);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningSoftwareDistribution);
             break;
         case 6:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningLogs);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningLogs);
             break;
         case 7:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningPublicDownloads);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningPublicDownloads);
             break;
         case 8:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningRecycleBinC);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningRecycleBinC);
             break;
         case 9:
-            SharedFunctions::SwapAndClearMenuAndClear(CleaningFunctions::CleaningAllRecycleBins);
+            SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningAllRecycleBins);
             break;
         default:
-            SharedFunctions::ClearMenu();
-            std::cout << "Такого действия не существует!" << std::endl << std::endl;
+			SharedFunctions::ErrorMessage(0);
             break;
         }
     }

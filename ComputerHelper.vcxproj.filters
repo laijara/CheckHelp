@@ -33,10 +33,16 @@
     <ClCompile Include="packageForMain\sys\SharedFunctions.cpp">
       <Filter>Исходные файлы</Filter>
     </ClCompile>
+    <ClCompile Include="packageForMain\sys\NotWorkingMenuFunctions.cpp">
+      <Filter>Исходные файлы</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="packageForMain\Classes.h">
       <Filter>Файлы заголовков</Filter>
     </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Futures.txt" />
   </ItemGroup>
 </Project>
