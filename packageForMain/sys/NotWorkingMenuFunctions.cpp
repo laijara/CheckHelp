@@ -20,7 +20,7 @@ void NotWorkingMenuFunctions::StartNotWorkingMenu() {
 }
 
 void NotWorkingMenuFunctions::DescriptionNotWorkingMenuCategories() {
-    std::cout << "ÝÒÎÒ ÁËÎÊ ÂÐÅÌÅÍÍÎ ÍÅ ÐÀÁÎÒÀÅÒ" << std::endl;
-    std::cout << "===============================" << std::endl << std::endl;
-    std::cout << "0. Âûõîä" << std::endl;
+    std::cout << "ÝÒÎÒ ÁËÎÊ ÂÐÅÌÅÍÍÎ ÍÅ ÐÀÁÎÒÀÅÒ!" << std::endl;
+    std::cout << "================================" << std::endl << std::endl;
+    std::cout << "0. Íàçàä" << std::endl;
 }
