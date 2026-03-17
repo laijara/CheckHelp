@@ -21,7 +21,7 @@ void SharedFunctions::CleaningMenu() {
 }
 
 void SharedFunctions::PauseMenu() {
-    std::cout << std::endl << std::endl << "Нажмите любую кнопку для продолжения..." << std::endl;
+    std::cout << std::endl << std::endl << "Нажмите Enter чтобы продолжить..." << std::endl;
     std::cin.ignore(9999, '\n');
     std::cin.get();
 }

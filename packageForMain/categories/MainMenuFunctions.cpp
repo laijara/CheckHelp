@@ -19,7 +19,7 @@ void MainMenuFunctions::StartProgram() {
             SharedFunctions::CleaningAndPauseMenu(0, FixFunctions::StartFix);
             break;
         case 3:
-            SharedFunctions::CleaningAndPauseMenu(0, NotWorkingMenuFunctions::StartNotWorkingMenu);
+            SharedFunctions::CleaningAndPauseMenu(0, CleaningFunctions::StartCleaning);
             break;
         default:
 			SharedFunctions::ErrorMessage(0);

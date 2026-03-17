@@ -73,33 +73,33 @@ void CleaningFunctions::CleaningAll() {
 }
 
 void CleaningFunctions::CleaningTemp() {
-    system("echo off && del /q /f /s \"C:\\Windows\\Temp\\*.*\" && for /d %%p in (\"C:\\Windows\\Temp\\*.*\") do rd /s /q \"%%p\"");
+    system("del /q /f /s \"C:\\Windows\\Temp\\*.*\" >nul 2>&1 && for /d %p in (\"C:\\Windows\\Temp\\*.*\") do rd /s /q \"%p\" >nul 2>&1");
 }
 
 void CleaningFunctions::CleaningUserTemp() {
-    system("echo off && del /q /f /s \"%TEMP%\\*.*\" && for /d %%p in (\"%TEMP%\\*.*\") do rd /s /q \"%%p\"");
+    system("del /q /f /s \"%TEMP%\\*.*\" >nul 2>&1 && for /d %p in (\"%TEMP%\\*.*\") do rd /s /q \"%p\" >nul 2>&1");
 }
 
 void CleaningFunctions::CleaningPrefetch() {
-    system("echo off && del /q /f /s \"C:\\Windows\\Prefetch\\*.*\" && for /d %%p in (\"C:\\Windows\\Prefetch\\*.*\") do rd /s /q \"%%p\"");
+    system("del /q /f /s \"C:\\Windows\\Prefetch\\*.*\" >nul 2>&1 && for /d %p in (\"C:\\Windows\\Prefetch\\*.*\") do rd /s /q \"%p\" >nul 2>&1");
 }
 
 void CleaningFunctions::CleaningSoftwareDistribution() {
-    system("echo off && del /q /f /s \"C:\\Windows\\SoftwareDistribution\\Download\\*.*\" && for /d %%p in (\"C:\\Windows\\SoftwareDistribution\\Download\\*.*\") do rd /s /q \"%%p\"");
+    system("del /q /f /s \"C:\\Windows\\SoftwareDistribution\\Download\\*.*\" >nul 2>&1 && for /d %p in (\"C:\\Windows\\SoftwareDistribution\\Download\\*.*\") do rd /s /q \"%p\" >nul 2>&1");
 }
 
 void CleaningFunctions::CleaningLogs() {
-    system("echo off && del /q /f /s \"C:\\Windows\\Logs\\*.*\" && for /d %%p in (\"C:\\Windows\\Logs\\*.*\") do rd /s /q \"%%p\"");
+    system("del /q /f /s \"C:\\Windows\\Logs\\*.*\" >nul 2>&1 && for /d %p in (\"C:\\Windows\\Logs\\*.*\") do rd /s /q \"%p\" >nul 2>&1");
 }
 
 void CleaningFunctions::CleaningPublicDownloads() {
-    system("echo off && del /q /f /s \"C:\\Users\\Public\\Downloads\\*.*\" && for /d %%p in (\"C:\\Users\\Public\\Downloads\\*.*\") do rd /s /q \"%%p\"");
+    system("del /q /f /s \"C:\\Users\\Public\\Downloads\\*.*\" >nul 2>&1 && for /d %p in (\"C:\\Users\\Public\\Downloads\\*.*\") do rd /s /q \"%p\" >nul 2>&1");
 }
 
 void CleaningFunctions::CleaningRecycleBinC() {
-    system("echo off && rd /s /q C:\\$Recycle.bin");
+    system("rd /s /q C:\\$Recycle.bin >nul 2>&1");
 }
 
 void CleaningFunctions::CleaningAllRecycleBins() {
-    system("echo off && for %%d in (C D E F) do if exist %%d:\\$Recycle.bin rd /s /q %%d:\\$Recycle.bin");
+    system("for %d in (C D E F) do if exist %d:\\$Recycle.bin rd /s /q %d:\\$Recycle.bin >nul 2>&1");
 }
