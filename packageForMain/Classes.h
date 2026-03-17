@@ -7,7 +7,7 @@ public:
     static void PauseMenu();
     static void CleaningMenu();
 	static void CleaningAndPauseMenu(short typeCleaning,void (*callback)());
-    static void ErrorMessage(short errorLevel);
+    static void ErrorMessage();
 private:
     static int errorCount;
 };

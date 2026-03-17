@@ -40,7 +40,7 @@ void CleaningFunctions::StartCleaning() {
             SharedFunctions::CleaningAndPauseMenu(2, CleaningFunctions::CleaningAllRecycleBins);
             break;
         default:
-			SharedFunctions::ErrorMessage(0);
+			SharedFunctions::ErrorMessage();
             break;
         }
     }

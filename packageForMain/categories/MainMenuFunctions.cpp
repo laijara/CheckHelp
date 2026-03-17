@@ -22,7 +22,7 @@ void MainMenuFunctions::StartProgram() {
             SharedFunctions::CleaningAndPauseMenu(0, CleaningFunctions::StartCleaning);
             break;
         default:
-			SharedFunctions::ErrorMessage(0);
+			SharedFunctions::ErrorMessage();
             break;
         }
     }

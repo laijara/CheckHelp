@@ -31,7 +31,7 @@ void InfoFunctions::StartInfo() {
             SharedFunctions::CleaningAndPauseMenu(2, InfoFunctions::InfoNet);
             break;
         default:
-            SharedFunctions::ErrorMessage(0);
+            SharedFunctions::ErrorMessage();
             break;
         }
     }

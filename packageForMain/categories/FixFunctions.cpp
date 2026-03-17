@@ -28,7 +28,7 @@ void FixFunctions::StartFix() {
             SharedFunctions::CleaningAndPauseMenu(2, FixFunctions::FixNetSettingsReset);
             break;
         default:
-			SharedFunctions::ErrorMessage(0);
+			SharedFunctions::ErrorMessage();
             break;
         }
     }

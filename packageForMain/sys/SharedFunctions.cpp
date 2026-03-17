@@ -1,17 +1,21 @@
 #include "../Classes.h"
+#include <string>
 
 int SharedFunctions::errorCount = 0;
 
 short SharedFunctions::SecureInput() {
-    short inp;
+    std::string line;
     std::cout << std::endl << "Вводите: ";
+    std::getline(std::cin, line);
 
-    if (std::cin >> inp) {
-        return inp;
+    if (line.empty()) {
+        return -1;
     }
-    else {
-        std::cin.clear();
-        std::cin.ignore(10000, '\n');
+
+    try {
+        return std::stoi(line);
+    }
+    catch (...) {
         return -1;
     }
 }
@@ -22,27 +26,15 @@ void SharedFunctions::CleaningMenu() {
 
 void SharedFunctions::PauseMenu() {
     std::cout << std::endl << std::endl << "Нажмите Enter чтобы продолжить..." << std::endl;
-    std::cin.ignore(9999, '\n');
-    std::cin.get();
+    std::string dummy;
+    std::getline(std::cin, dummy);
 }
 
-void SharedFunctions::ErrorMessage(short errorLevel) {
+void SharedFunctions::ErrorMessage() {
     errorCount++;
-    if (errorLevel == 0) {
-        SharedFunctions::CleaningMenu();
-        std::cout << "Произошла ошибка!" << " Количество ошибок - " << errorCount << std::endl;
-        std::cout << "Такого действия не существует!" << std::endl << std::endl;
-    }
-    else if (errorLevel == 1) {
-        SharedFunctions::CleaningMenu();
-        std::cout << "Произошла ошибка!" << " Количество ошибок - " << errorCount << std::endl;
-        std::cout << "Ошибка ввода!" << std::endl << std::endl;
-    }
-    else {
-        SharedFunctions::CleaningMenu();
-        std::cout << "Произошла ошибка!" << " Количество ошибок - " << errorCount << std::endl;
-        std::cout << "Неизвестная ошибка!" << std::endl << std::endl;
-    }
+    SharedFunctions::CleaningMenu();
+    std::cout << "Произошла ошибка!" << " Количество ошибок - " << errorCount << std::endl;
+    std::cout << "Такого действия не существует!" << std::endl << std::endl;
 }
 
 void SharedFunctions::CleaningAndPauseMenu(short typeCleaning, void(*callback)()) {

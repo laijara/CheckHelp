@@ -12,7 +12,7 @@ void NotWorkingMenuFunctions::StartNotWorkingMenu() {
             return;
 		}
         else {
-            SharedFunctions::ErrorMessage(0);
+            SharedFunctions::ErrorMessage();
 		}
     }
 }
