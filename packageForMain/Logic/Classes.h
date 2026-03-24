@@ -1,36 +1,8 @@
 #pragma once
 #include <iostream>
 
-class SharedFunctions {
-public:
-    static short SecureInput();
-    static void PauseMenu();
-    static void CleaningMenu();
-	static void CleaningAndPauseMenu(short typeCleaning,void (*callback)());
-    static void ErrorMessage();
-private:
-    static int errorCount;
-};
-
-class MainMenuFunctions {
-public:
-    static void StartProgram();
-private:
-    static void DescriptionCategories();
-};
-
-class NotWorkingMenuFunctions {
-public:
-    static void StartNotWorkingMenu();
-private:
-    static void DescriptionNotWorkingMenuCategories();
-};
-
 class InfoFunctions {
 public:
-    static void StartInfo();
-private:
-    static void DescriptionInfoCategories();
     static void InfoSystem();
     static void InfoIp();
     static void InfoResources();
@@ -41,9 +13,6 @@ private:
 
 class FixFunctions {
 public:
-    static void StartFix();
-private:
-    static void DescriptionFixCategories();
     static void FixSystem();
     static void FixDisk();
     static void FixOperationalMemory();
@@ -53,9 +22,6 @@ private:
 
 class CleaningFunctions {
 public:
-    static void StartCleaning();
-private:
-    static void DescriptionCleaningCategories();
     static void CleaningAll();
     static void CleaningTemp();
     static void CleaningUserTemp();
